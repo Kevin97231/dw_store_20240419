@@ -3,6 +3,7 @@ import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import { Product } from "./view/Product";
+import { ProductDetail } from "./view/ProductDetail";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,7 +21,7 @@ function App() {
         },
         {
           path: "products/:id",
-          element: <>ProductDetail</>,
+          element: <ProductDetail/>,
         },
         {
           path: 'panier',
