@@ -5,7 +5,7 @@ import { useState } from "react"
 const baseUrl = 'http://localhost:3001/dw_store'
 
 const api = axios.create({
-    baseURL: baseUrl
+  baseURL: baseUrl
 })
 
 api.interceptors.request.use( config => {
