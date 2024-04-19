@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import { Product } from "./view/Product";
 import { ProductDetail } from "./view/ProductDetail";
+import { Cart } from "./view/Cart";
 
 function App() {
   const router = createBrowserRouter([
@@ -25,7 +26,7 @@ function App() {
         },
         {
           path: 'panier',
-          element: <>mon panier</>
+          element: <Cart/>
         }
       ],
     },

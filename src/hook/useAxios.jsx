@@ -11,7 +11,7 @@ const api = axios.create({
 api.interceptors.request.use( config => {
     // Promise: objet javascript. Une promesse représente une valeur qui peut être disponible 
     // dans le futur ou jamais. La fonction de rappelle fournie 'resolve' et sera appelée losque la promesse est résolue
-    return new Promise( (resolve) => setTimeout( () => resolve(config), 3000)) // Délai de 3s
+    return new Promise( (resolve) => setTimeout( () => resolve(config), 1000)) // Délai de 3s
 })
 
 export const useAxios = () => {
